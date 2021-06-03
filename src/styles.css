@@ -1,0 +1,49 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.preloader {
+  height: 100%;
+  width: 100%;
+  background: whitesmoke;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  perspective: 1600px;
+  perspective-origin: 20% 50%;
+  transition: 0.5s all;
+  opacity: 1;
+}
+.loader {
+  width: 1000px;
+  height: 80px;
+  border: 2px solid whitesmoke;
+  border-top: 3px solid cadetblue;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  animation: spin 1s infinite linear;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card-deck {
+  margin-bottom: 20px;
+}
+.load_but {
+  margin-left: 20px;
+}
+.crd {
+  margin-top: 10px;
+}
